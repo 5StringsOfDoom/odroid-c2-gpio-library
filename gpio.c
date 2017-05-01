@@ -21,11 +21,9 @@
  * SOFTWARE.
  */
 
-#include "tsimple.h"
-
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "tsimple.h"
 
 void init_GPIO(uint8 gpioNumber)
 {
@@ -42,7 +40,6 @@ void init_GPIO(uint8 gpioNumber)
 	}
 } /* init_GPIO */
 
-
 void UNinit_GPIO(uint8 gpioNumber)
 {
 	char stringBufer[36];
@@ -58,7 +55,6 @@ void UNinit_GPIO(uint8 gpioNumber)
 	}
 } /* init_GPIO */
 
-
 void gpioMode(uint8 gpioNumber, uint8 mode)
 {
 	char stringBufer[45];
@@ -67,7 +63,6 @@ void gpioMode(uint8 gpioNumber, uint8 mode)
 	system(stringBufer);
 } /* pinMode */
 
-
 void gpioWrite(uint8 gpioNumber, uint8 state)
 {
 	char stringBufer[39];
@@ -75,7 +70,6 @@ void gpioWrite(uint8 gpioNumber, uint8 state)
 	sprintf(stringBufer, "echo %d > /sys/class/gpio/gpio%d/value", (state?1:0), gpioNumber);
 	system(stringBufer);
 } /* gpioWrite */
-
 
 uint8 gpioRead(uint8 gpioNumber)
 {
@@ -97,7 +91,6 @@ uint8 gpioRead(uint8 gpioNumber)
 
 	fread(readBufer, 1, 1, gpioFILE);
 
-
 	if(fclose(gpioFILE) == EOF)
 	{
 		fprintf(stderr, "GPIO %d fail on closing file for read\n", gpioNumber);
@@ -106,4 +99,3 @@ uint8 gpioRead(uint8 gpioNumber)
 
 	return (readBufer[0] == '1') ? 1 : 0;
 } /* gpioRead */
-
