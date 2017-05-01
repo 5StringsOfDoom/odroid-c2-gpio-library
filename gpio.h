@@ -85,24 +85,20 @@
  */
 void init_GPIO(uint8 gpioNumber);
 
-
 /*
  * Disable GPIO.
  */
 void UNinit_GPIO(uint8 gpioNumber);
-
 
 /*
  * Set GPIO mode INPUT/OUTPUT
  */
 void gpioMode(uint8 gpioNumber, uint8 mode);
 
-
 /*
  * Write data to GPIO.
  */
 void gpioWrite(uint8 gpioNumber, uint8 state);
-
 
 /*
  * Read data from GPIO.
@@ -110,4 +106,3 @@ void gpioWrite(uint8 gpioNumber, uint8 state);
 uint8 gpioRead(uint8 gpioNumber);
 
 #endif
-
