@@ -4,8 +4,6 @@ FILES=main.c gpio.c gpio.h tsimple.h
 CC=gcc
 CFLAGS=-O2 -Wall
 
-
-
 .PHONY: all clean
 
 all:
