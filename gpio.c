@@ -1,6 +1,6 @@
 /*
  * MIT License
- * Copyright (c) 2017 Michal Kozakiewicz, github.com/michal037
+ * Copyright (c) from 2017, Michal Kozakiewicz, github.com/michal037
  *
  */
 
