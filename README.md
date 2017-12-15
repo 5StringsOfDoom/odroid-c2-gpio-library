@@ -1,13 +1,13 @@
-# Odroid C2 GPIO Library
+# *Odroid C2 GPIO Library*
 
-## Description
+## *Description*
 My custom library for GPIO. It can handle 4-GPIO that are not in wiringPi.
 GPIO from `Odroid-C2 rev0.2 20160226`
 
-## License
-MIT License
+## *License*
+**MIT License**
 
-Copyright (c) 2017 Michal Kozakiewicz, github.com/michal037
+**Copyright (c) from 2017, Michal Kozakiewicz, [github.com/michal037](github.com/michal037)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
